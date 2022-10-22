@@ -1,4 +1,4 @@
-# YTMP3 ReactJs
+# YTMP3 NextJs
 
 YTMP3 is an website where you can download youtube video's audio without **Advertisments!**
 
