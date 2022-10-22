@@ -52,7 +52,12 @@ const AudioInfoCard: NextPage<AudioInfoProps> = ({
 
   const formatBytes = (bytes: number) =>
     `${(bytes / (1024 * 1024)).toFixed(2)} MB`;
-
+  const buttonStyle = {
+    paddingLeft: '20px',
+    paddingRight: '20px',
+    paddingTop: '8px',
+    paddingBottom: '8px',
+  };
   return (
     <div className='mt-24 w-full bg-input px-6 py-10 rounded-2xl shadow-md flex flex-col items-center justify-center gap-9 font-regular text-md text-gray-300'>
       <div className='flex items-center justify-center flex-col gap-2 text-center'>
@@ -82,14 +87,16 @@ const AudioInfoCard: NextPage<AudioInfoProps> = ({
         )}
         <div className='flex items-center justify-center gap-4'>
           <Button
-            className='font-normal px-5 py-2'
+            className='font-normal'
+            style={buttonStyle}
             onClick={() => downloadAudio(id)}
             disabled={disabled}
           >
             Download MP3
           </Button>
           <Button
-            className='font-normal px-5 py-2'
+            className='font-normal'
+            style={buttonStyle}
             onClick={() => setAudioInfo(undefined)}
           >
             Back
