@@ -47,7 +47,7 @@ const Home: NextPage = () => {
     <div className='h-screen bg-darkAccent flex items-center justify-center text-white font-inter'>
       <div className='px-4 w-[700px] mx-auto flex flex-col items-center justify-center'>
         <h1 className='text-3xl font-semibold tracking-wider text-center'>
-          Convert Youtube Video To MP3
+          Convert Youtube Video To MP
         </h1>
 
         {!audioInfo ? (
