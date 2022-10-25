@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
 
   env: {
-    API_URL: 'https://api.youtube-mp3.gq/api',
+    API_URL: 'https://api.youtube-to-mp3.ml/api',
   },
   assetPrefix: './',
 };
